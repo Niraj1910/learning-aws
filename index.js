@@ -9,6 +9,10 @@ app.get("/", (req, res) => {
   res.end("from server");
 });
 
+app.get("/test", (req, res) => {
+  res.end("testing...");
+});
+
 app.listen(PORT, () => {
   console.log(`server is running on http://localhost:${PORT}`);
 });
