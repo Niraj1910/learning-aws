@@ -13,6 +13,10 @@ app.get("/test", (req, res) => {
   res.end("testing...");
 });
 
+function add(a, b) {
+  return a + b;
+}
+
 app.listen(PORT, () => {
   console.log(`server is running on http://localhost:${PORT}`);
 });
