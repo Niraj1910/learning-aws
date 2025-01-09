@@ -10,7 +10,8 @@ app.get("/", (req, res) => {
 });
 
 app.get("/test", (req, res) => {
-  res.end("testing...");
+  const result = add(10, 15);
+  res.end("testing...  " + result);
 });
 
 function add(a, b) {
